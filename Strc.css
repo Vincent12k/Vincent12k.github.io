@@ -1,0 +1,264 @@
+body {
+  font-family: Comic Sans MS;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #f5f5f5;
+}
+header {
+  background-color: #e82828;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: flex;
+  gap: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+main {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+}
+footer {
+background-color: #e82828;
+color: #242424;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+.custom-button {
+width: 80px;
+border-radius: 100px;
+border: none;
+background-color: #ec9410;
+color: #fff;
+font-size: 1rem;
+padding: 9px;
+cursor: pointer;
+}
+a {
+text-decoration: none;
+color: #f5f5f5;
+}
+a:hover {
+color: #f5f5f5;
+}
+a:focus {
+outline: none;
+}
+button {
+padding: 12.5px 30px;
+border: 0;
+border-radius: 100px;
+background-color: #2ba8fb;
+color: #ffffff;
+font-weight: Bold;
+transition: all 0.5s;
+}
+button:hover {
+background-color: #6fc5ff;
+box-shadow: 0 0 20px #6fc5ff50;
+transform: scale(1.1);
+}
+button:active {
+background-color: #3d94cf;
+transition: all 0.25s;
+box-shadow: none;
+transform: scale(0.98);
+}
+.input {
+max-width: 190px;
+background-color: #f5f5f5;
+color: #242424;
+padding: 10px;
+border-radius: 4px;
+outline: none;
+border: none;
+line-height: 2;
+box-shadow: 0px 10px 20px -18px;
+}
+.notification {
+display: none;
+position: fixed;
+top: 10px;
+left: 50%;
+transform: translateX(-50%);
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+padding: 10px;
+z-index: 9999;
+border-radius: 15px;
+color: #242424;
+}
+input:focus {
+border-bottom: 2px solid #ec9410;
+border-radius: 4px 4px 2px 2px;
+}
+input:hover {
+outline: 1px solid lightgrey;
+}
+.container1 {
+border-radius: px;
+position: relative;
+width: 100%;
+display: flex;
+justify-content: center;
+height: auto;
+}
+.card {
+width: 300px;
+height: 400px;
+border-radius: 20px;
+background: #f5f5f5;
+position: relative;
+padding: 1.8rem;
+border: 2px solid #c3c6ce;
+transition: 0.5s ease-out;
+overflow: visible;
+}
+
+.card-details {
+color: black;
+height: 100%;
+gap: .5em;
+display: grid;
+place-content: center;
+}
+
+.card-button {
+transform: translate(-50%, 125%);
+width: 60%;
+border-radius: 1rem;
+border: none;
+background-color: #ec9410;
+color: #fff;
+font-size: 1rem;
+padding: .5rem 1rem;
+position: absolute;
+left: 50%;
+bottom: 0;
+opacity: 0;
+transition: 0.3s ease-out;
+}
+.card:hover {
+border-color: #e82828;
+box-shadow: 0 4px 18px 0 #e82828;
+}
+
+.card:hover .card-button {
+transform: translate(-50%, 50%);
+opacity: 1;
+}
+.btn1 {
+background-color: #ec9410;
+}
+.btn1:hover {
+background-color: #fa5703;
+}
+.center-button {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.card:nth-child(1) {
+background: #D6001C;
+}
+
+.card:nth-child(2) {
+background: #FA8003;
+}
+
+.card:nth-child(3) {
+background: #009CA6;
+}
+.card:nth-child(4) {
+background: #FF620F;
+}
+.card:hover:nth-child(2) {
+  border: #FA8003;
+  box-shadow: 0 4px 18px 0 #fa5703;
+}
+.card:hover:nth-child(3) {
+  border: #009CA6;
+  box-shadow: 0 4px 18px 0 #00a694;
+}
+.card:hover:nth-child(4) {
+  border: #FF620F;
+  box-shadow: 0 4px 18px 0 #fa6b03;
+}
+.txt1 {
+color: #f5f5f5;
+font-size: 25px;
+height: 70px;
+}
+.txt2 {
+color: #f5f5f5;
+}
+.txt3 {
+color: #f5f5f5;
+font-size: 22px;
+}
+.txt4 {
+font-size: 35px;
+color: #242424;
+text-align: center;
+font-weight: 600;
+}
+.txt5 {
+color: #f5f5f5;
+font-size: 25px;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #888;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #f5f5f5;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #2ba8fb;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+.bckgrd {
+background-color: #FFEAB8;
+}
+.lnk {
+text-decoration: none;
+}
